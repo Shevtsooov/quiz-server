@@ -6,7 +6,7 @@
 
 # Links
 
-[API](https://???/)
+[API](https://quiz-server-3co9.onrender.com/)
 
 ## Endpoints
 
@@ -14,10 +14,10 @@
 
 This endpoint retrieves a list of all the questions.
 
-_https://???/questions_
+_https://quiz-server-3co9.onrender.com/questions_
 
 ### GET /questions/:category
 
 This endpoint retrieves a list of all the questions by a category. It returns a JSON array containing information about each question in a category.
 
-_https://???/questions/:category_
+_https://quiz-server-3co9.onrender.com/questions/:category_
