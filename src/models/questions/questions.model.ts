@@ -5,6 +5,7 @@ import {
   Table,
   DataType,
   PrimaryKey,
+  AutoIncrement,
 } from 'sequelize-typescript';
 
 @Table({
@@ -15,6 +16,7 @@ import {
 export class Questions extends Model {
   @AllowNull(false)
   @PrimaryKey
+  @AutoIncrement
   @Column({
     type: DataType.INTEGER,
   })

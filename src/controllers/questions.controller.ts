@@ -1,7 +1,26 @@
+/* eslint-disable indent */
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import type { Request, Response } from 'express';
 import { Questions } from '../models/questions/questions.model';
+
+const categories = {
+  geography: 'Географія',
+  history: 'Історія',
+  sport: 'Спорт',
+  others: 'Інше',
+  science: 'Наука',
+  politics: 'Політика',
+  movies: 'Кіно',
+  music: 'Музика',
+  art: 'Мистецтво',
+  literature: 'Література',
+  personalities: 'Особистості',
+  entetainment: 'Розваги',
+  technologies: 'Технології',
+  floraAndFauna: 'Флора та фауна',
+  human: 'Людина'
+};
 
 export const getQuestionsList = async (
   req: Request,
@@ -24,6 +43,12 @@ export const getQuestionsByCategory = async (
   try {
     const { category } = req.params;
 
+    if (!(category in categories)) {
+      res.status(404).json({ error: 'На жаль, такої категорії не існує, або ж ви помилилися у її написанні' });
+
+      return;
+    }
+
     const questions = await Questions.findAll({
       raw: true,
       where: {
@@ -31,14 +56,49 @@ export const getQuestionsByCategory = async (
       }
     });
 
-    const availableCategories = new Set(questions.map(question => question.category));
+    if (questions.length === 0) {
+      res.status(404).json({ error: 'В даній категорії ще немає жодного питання' });
 
-    if (!availableCategories.has(category)) {
-      res.status(404).json({ error: 'На жаль, такої категорії не існує, або ж ви помилилися у її написанні' });
+      return;
     }
 
-    res.json([...questions, ...availableCategories]);
+    res.json(questions);
   } catch (error) {
     console.error('Error fetching questions:', error);
+  }
+};
+
+export const addQuestionToList = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const {
+      title,
+      answers,
+      correctAnswer,
+      category,
+      difficulty
+    } = req.body;
+
+    if (!(category in categories)) {
+      res.status(404).json({ error: 'На жаль, такої категорії не існує, або ж ви помилилися у її написанні' });
+
+      return;
+    }
+
+    const newQuestion = await Questions.create({
+      title,
+      answers,
+      correctAnswer,
+      category,
+      categoryName: categories[category],
+      difficulty
+    });
+
+    res.statusCode = 201;
+    res.send(newQuestion);
+  } catch (error) {
+    res.status(404).json({ error: 'Не вдалось додати питання' });
   }
 };
