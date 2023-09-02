@@ -102,3 +102,75 @@ export const addQuestionToList = async (
     res.status(404).json({ error: 'Не вдалось додати питання' });
   }
 };
+
+export const deleteQuestionFromList = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { title } = req.body;
+
+    const questions = await Questions.findAll();
+
+    const allTheTitles = questions.map(question => (
+      question.title
+    ));
+
+    console.log(allTheTitles);
+
+    if (!allTheTitles.includes(title)) {
+      res.status(404).json({ error: 'На жаль, такого питання не існує, або ж ви помилилися у його написанні' });
+
+      return;
+    }
+
+    const removedQuestion = await Questions.destroy({
+      where: {
+        title
+      }
+    });
+    res.send('hi');
+    res.statusCode = 204;
+    res.send(removedQuestion);
+  } catch (error) {
+    res.status(404).json({ error: 'Не вдалось видалити питання' });
+  }
+};
+
+export const updateQuestion = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const {
+      title,
+      newTitle,
+      answers,
+      correctAnswer,
+      category,
+      difficulty
+    } = req.body;
+
+    const currentQuestion = await Questions.findOne({
+      where: {
+        title
+      }
+    });
+
+    currentQuestion?.set({
+      title: newTitle,
+      answers,
+      correctAnswer,
+      category,
+      categoryName: categories[category],
+      difficulty
+    });
+
+    const updatedQuestion = await currentQuestion?.save();
+
+    res.statusCode = 200;
+    res.send(updatedQuestion);
+  } catch (error) {
+    res.status(404).json({ error: 'Не вдалось оновити питання' });
+  }
+};

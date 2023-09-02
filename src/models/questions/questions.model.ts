@@ -6,6 +6,7 @@ import {
   DataType,
   PrimaryKey,
   AutoIncrement,
+  Unique,
 } from 'sequelize-typescript';
 
 @Table({
@@ -23,6 +24,7 @@ export class Questions extends Model {
   id: number;
 
   @AllowNull(false)
+  @Unique
   @Column({
     type: DataType.STRING,
   })

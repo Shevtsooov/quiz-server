@@ -28,3 +28,15 @@ _https://quiz-server-3co9.onrender.com/questions/:category_
 This endpoint adds a new question to the list.
 
 _https://quiz-server-3co9.onrender.com/questions_
+
+### PATCH /questions
+
+This endpoint updates a question in the list searched by a title.
+
+_https://quiz-server-3co9.onrender.com/questions_
+
+### DELETE /questions
+
+This deletes a question by the found title.
+
+_https://quiz-server-3co9.onrender.com/questions_
