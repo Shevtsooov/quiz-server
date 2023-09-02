@@ -157,19 +157,46 @@ export const updateQuestion = async (
       }
     });
 
-    currentQuestion?.set({
-      title: newTitle,
-      answers,
-      correctAnswer,
-      category,
-      categoryName: categories[category],
-      difficulty
-    });
+    if (currentQuestion !== null) {
+      const updateData: {
+        title?: string
+        answers?: string[]
+        correctAnswer?: string
+        category?: string
+        categoryName?: string
+        difficulty?: string
+      } = {};
 
-    const updatedQuestion = await currentQuestion?.save();
+      if (newTitle !== undefined) {
+        updateData.title = newTitle;
+      }
 
-    res.statusCode = 200;
-    res.send(updatedQuestion);
+      if (answers !== undefined) {
+        updateData.answers = answers;
+      }
+
+      if (correctAnswer !== undefined) {
+        updateData.correctAnswer = correctAnswer;
+      }
+
+      if (category !== undefined) {
+        updateData.category = category;
+        updateData.categoryName = categories[category];
+      }
+
+      if (difficulty !== undefined) {
+        updateData.difficulty = difficulty;
+      }
+
+      currentQuestion.set(updateData);
+
+      const updatedQuestion = await currentQuestion.save();
+
+      res.statusCode = 200;
+      res.send(updatedQuestion);
+    } else {
+      res.status(404).json({ error: 'Питання не знайдено' });
+    }
   } catch (error) {
     res.status(404).json({ error: 'Не вдалось оновити питання' });
   }
