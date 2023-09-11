@@ -3,7 +3,7 @@
 // @ts-nocheck
 import type { Request, Response } from 'express';
 import { Questions } from '../models/questions/questions.model';
-import { sequelize } from 'sequelize';
+import { sequelize } from 'sequelize-typescript';
 
 const categories = {
   geography: 'Географія',
@@ -29,7 +29,15 @@ export const getQuestionsList = async (
 ): Promise<void> => {
   try {
     const questions = await Questions.findAll({
-      raw: true
+      raw: true,
+      attributes: {
+        include: [
+          [
+            sequelize.cast(sequelize.col('answers'), 'ARRAY(TEXT)'),
+            'answers'
+          ]
+        ]
+      }
     });
 
     res.json(questions);
