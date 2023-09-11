@@ -3,7 +3,6 @@
 // @ts-nocheck
 import type { Request, Response } from 'express';
 import { Questions } from '../models/questions/questions.model';
-import { sequelize } from 'sequelize-typescript';
 
 const categories = {
   geography: 'Географія',
