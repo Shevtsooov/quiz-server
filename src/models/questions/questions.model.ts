@@ -32,7 +32,7 @@ export class Questions extends Model {
 
   @AllowNull(false)
   @Column({
-    type: DataType.TEXT,
+    type: DataType.ARRAY(DataType.STRING),
   })
   answers: string[];
 
