@@ -3,7 +3,7 @@ import cors from 'cors';
 import { initDB } from './initDB';
 import { questionsRoutes } from './routes/questions.routes';
 
-const PORT = 5000;
+const PORT = 5001;
 
 const app = express();
 app.use(cors({

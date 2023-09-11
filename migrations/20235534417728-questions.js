@@ -1,5 +1,4 @@
 'use strict';
-
 const TABLE_NAME = 'questions';
 
 module.exports = {
@@ -8,34 +7,28 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
       },
-
       title: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-
       answers: {
-        type: Sequelize.STRING,
+        type: Sequelize.ARRAY(Sequelize.STRING),
         allowNull: false,
       },
-
       correctAnswer: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-
       category: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-
       categoryName: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-
       difficulty: {
         type: Sequelize.STRING,
         allowNull: true,
