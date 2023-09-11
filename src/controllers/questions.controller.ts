@@ -27,7 +27,17 @@ export const getQuestionsList = async (
   res: Response
 ): Promise<void> => {
   try {
-    const questions = await Questions.findAll();
+    const questions = await Questions.findAll({
+      raw: true,
+      attributes: {
+        include: [
+          [
+            sequelize.cast(sequelize.col('answers'), 'ARRAY(TEXT)'),
+            'answers'
+          ]
+        ]
+      }
+    });
 
     res.json(questions);
   } catch (error) {
