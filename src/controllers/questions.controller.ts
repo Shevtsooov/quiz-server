@@ -29,7 +29,14 @@ export const getQuestionsList = async (
   try {
     const questions = await Questions.findAll();
 
-    res.json(questions);
+    // res.json(questions);
+    
+    const questionsWithParsedAnswers = questions.map((question) => ({
+      ...question.toJSON(),
+      answers: question.answers.split(',')
+    }));
+
+    res.json(questionsWithParsedAnswers);
   } catch (error) {
     console.error('Error fetching questions:', error);
     res.status(500).json({ error: 'Internal server error' });
