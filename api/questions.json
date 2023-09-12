@@ -10,10 +10,10 @@
     "correctAnswer": 1,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка найбільша пустеля світу?",
+    "title": "Найбільша пустеля світу?",
     "answers": [
       "Сахара",
       "Аравійська пустеля",
@@ -23,7 +23,7 @@
     "correctAnswer": 2,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Як називається найбільша річка, що протікає через Париж? ",
@@ -36,10 +36,10 @@
     "correctAnswer": 0,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка найменша країна світу?",
+    "title": "Найменша країна світу?",
     "answers": [
       "Сінгапур",
       "Ліхтенштейн",
@@ -49,10 +49,10 @@
     "correctAnswer": 3,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка столиця Канади?",
+    "title": "Столиця Канади?",
     "answers": [
       "Кінгстон",
       "Оттава",
@@ -62,7 +62,7 @@
     "correctAnswer": 1,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "До якої країни належать Канарські острови?",
@@ -75,7 +75,7 @@
     "correctAnswer": 1,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Столицею якої країни є Вадуц?",
@@ -88,7 +88,7 @@
     "correctAnswer": 2,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Яка столиця Південної Кореї?",
@@ -101,10 +101,10 @@
     "correctAnswer": 0,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка найвища споруда, створена людиною?",
+    "title": "Найвища споруда, створена людиною?",
     "answers": [
       "Ейфелева вежа, Париж",
       "Вежі-близнюки, Нью-Йорк",
@@ -114,10 +114,10 @@
     "correctAnswer": 3,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка офіційна валюта Індії?",
+    "title": "Офіційна валюта Індії?",
     "answers": [
       "Ріал",
       "Рупія",
@@ -127,7 +127,7 @@
     "correctAnswer": 1,
     "category": "geography",
     "categoryName": "Географія",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "Сфінкс це:",
@@ -140,10 +140,10 @@
     "correctAnswer": 2,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Хто є першим президентом Сполучених Штатів?",
+    "title": "Хто був першим президентом Сполучених Штатів Америки?",
     "answers": [
       "Томас Джефферсон",
       "Джордж Вашингтон",
@@ -153,7 +153,7 @@
     "correctAnswer": 1,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Складно"
   },
   {
     "title": "З якої країни виникла цивілізація ацтеків?",
@@ -166,7 +166,7 @@
     "correctAnswer": 3,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Хто був першою людиною, яка ступила на Місяць?",
@@ -179,7 +179,7 @@
     "correctAnswer": 2,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "В якому океані затонув Титанік?",
@@ -192,10 +192,10 @@
     "correctAnswer": 1,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Коли впала Берлінська стіна?",
+    "title": "В якому році впала Берлінська стіна?",
     "answers": [
       "1989 рік",
       "1991 рік",
@@ -205,7 +205,7 @@
     "correctAnswer": 0,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Коли відбувся Brexit?",
@@ -218,10 +218,10 @@
     "correctAnswer": 0,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка країна почала пандемію Covid-19?",
+    "title": "В якій країні спалахнула пандемія Covid-19?",
     "answers": [
       "Італія",
       "США",
@@ -231,7 +231,7 @@
     "correctAnswer": 3,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "У якому році розпався Радянський Союз?",
@@ -244,7 +244,7 @@
     "correctAnswer": 1,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Коли було засновано Facebook?",
@@ -257,10 +257,10 @@
     "correctAnswer": 2,
     "category": "history",
     "categoryName": "Історія",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка країна виграла чемпіонат світу з футболу у 2018 році?",
+    "title": "Яка країна виграла чемпіонат світу з футболу 2018 року?",
     "answers": [
       "Іспанія",
       "Бразилія",
@@ -270,7 +270,7 @@
     "correctAnswer": 2,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "За яку команду Майкл Джордан провів більшу частину своєї кар’єри?",
@@ -283,7 +283,7 @@
     "correctAnswer": 0,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "На честь кого проводились стародавні Олімпійські Ігри?",
@@ -296,7 +296,7 @@
     "correctAnswer": 0,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "Золота рибка України?",
@@ -309,7 +309,7 @@
     "correctAnswer": 2,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "В якому виді спорту Лілія Подкопаєва здобула золоту медаль?",
@@ -322,7 +322,7 @@
     "correctAnswer": 2,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Країна – батьківщина футболу?",
@@ -335,7 +335,7 @@
     "correctAnswer": 0,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "Бобслей – це ... спорт.",
@@ -348,7 +348,7 @@
     "correctAnswer": 2,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Як звати братів Кличків?",
@@ -361,7 +361,7 @@
     "correctAnswer": 3,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "У якому виді спорту використовують найлегший м’яч?",
@@ -374,7 +374,7 @@
     "correctAnswer": 2,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "Місце, де відбуваються кінні змагання?",
@@ -387,7 +387,7 @@
     "correctAnswer": 1,
     "category": "sport",
     "categoryName": "Спорт",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Як називається найбільша технологічна компанія в Південній Кореї?",
@@ -395,7 +395,7 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Cтолиця Португалії?",
@@ -403,7 +403,7 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
     "title": "Який актор здобув «Оскар» за фільми «Філадельфія» (1993) та «Форест Гамп» (1994)?",
@@ -415,10 +415,10 @@
     "correctAnswer": 2,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Який футбольний клуб переміг у Лізі Чемпіонів 2023 року",
+    "title": "Який футбольний клуб переміг у Лізі Чемпіонів 2023 року?",
     "answers": [
       "Інтер",
       "Манчестер Сіті",
@@ -427,10 +427,10 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Нормально"
   },
   {
-    "title": "Яка кількість гравців у волейбольній команді",
+    "title": "Кількість гравців у волейбольній команді?",
     "answers": [
       "11",
       "5",
@@ -439,10 +439,10 @@
     "correctAnswer": 2,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Як звуть гурт з такими учасниками: Джон Дікон, Брайан Мей, Фредді Мерк'юрі, Роджер Тейлор?",
+    "title": "Як називаєтьс гурт з такими учасниками: Джон Дікон, Брайан Мей, Фредді Мерк'юрі, Роджер Тейлор?",
     "answers": [
       "Beatles",
       "Queen",
@@ -451,10 +451,10 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Який співак був відомий серед іншого під назвою \"Король поп-музики\" та \"Рукавичка\"?",
+    "title": "Який співак був відомий за такими прізвиськами: \"Король поп-музики\" та \"Рукавичка\"?",
     "answers": [
       "Майкл Джордан",
       "Майкл Джексон",
@@ -463,7 +463,7 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "Яка американська поп-зірка мала успіх у чартах 2015 року із синглами \"Sorry\" та \"Love Yourself\"?",
@@ -475,7 +475,7 @@
     "correctAnswer": 0,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Складно"
   },
   {
     "title": "Де у світі виставлена ​​«Мона Ліза» Леонардо да Вінчі?",
@@ -487,10 +487,10 @@
     "correctAnswer": 2,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Складно"
   },
   {
-    "title": "Назвіть країну, в якій можна знайти Колізей",
+    "title": "В якій країні знаходиться Колізей?",
     "answers": [
       "Ватикан",
       "Італія",
@@ -499,10 +499,10 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Назвіть країну, в якій можна знайти Статую Свободи",
+    "title": "Де можна побачити Статую Свободи?",
     "answers": [
       "Англія",
       "Франція",
@@ -511,10 +511,10 @@
     "correctAnswer": 2,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Назвіть країну, в якій можна знайти Тадж-Махал",
+    "title": "В якій країні знаходиться Тадж-Махал?",
     "answers": [
       "Індія",
       "Китай",
@@ -523,10 +523,10 @@
     "correctAnswer": 0,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
-    "title": "Назвіть країну, в якій можна знайти Стоунхендж",
+    "title": "Назвіть країну, в якій можна побачити Стоунхендж.",
     "answers": [
       "Бельгія",
       "Англія",
@@ -535,19 +535,19 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "Закінчення Першої світової війни:",
     "answers": [
-      "1818",
-      "1945",
-      "1918"
+      "1818 рік",
+      "1945 рік",
+      "1918 рік"
     ],
     "correctAnswer": 2,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Легко"
   },
   {
     "title": "У Дайнеріс є 3 дракони, двох звати Дрогон і Рейгал, як звуть третього?",
@@ -559,10 +559,10 @@
     "correctAnswer": 0,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Складно"
   },
   {
-    "title": "Столиця Кіпру",
+    "title": "Столиця Кіпру?",
     "answers": [
       "Лімасол",
       "Нікосія",
@@ -571,6 +571,6 @@
     "correctAnswer": 1,
     "category": "others",
     "categoryName": "Інше",
-    "difficulty": null
+    "difficulty": "Нормально"
   }
 ]
