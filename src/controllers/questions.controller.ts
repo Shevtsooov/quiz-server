@@ -28,7 +28,7 @@ export const getQuestionsList = async (
   res: Response
 ): Promise<void> => {
   const {
-    limit = 20,
+    limit,
     offset = 0,
     query = '',
     categoryName = 'all',
@@ -62,7 +62,7 @@ export const getQuestionsList = async (
     const questions = await Questions.findAndCountAll({
       raw: true,
       where: whereClause,
-      limit: Number(limit),
+      limit,
       offset: Number(offset)
     });
 
