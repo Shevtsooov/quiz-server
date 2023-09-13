@@ -31,7 +31,7 @@ export const getQuestionsList = async (
     limit = 20,
     offset = 0,
     query = '',
-    category = 'all',
+    categoryName = 'all',
     difficulty = 'all'
   } = req.query;
 
@@ -43,21 +43,21 @@ export const getQuestionsList = async (
       }
     };
 
-    if (category !== 'all') {
-      whereClause.category = category;
+    if (categoryName !== 'all') {
+      whereClause.categoryName = categoryName;
     }
 
-    if (category === 'Всі категорії') {
-      whereClause.category = 'all';
-    }
+    // if (categoryName === 'Всі категорії') {
+    //   whereClause.categoryName = 'all';
+    // }
 
     if (difficulty !== 'all') {
       whereClause.difficulty = difficulty;
     }
 
-    if (difficulty === 'Складність') {
-      whereClause.difficulty = 'all';
-    }
+    // if (difficulty === 'Складність') {
+    //   whereClause.difficulty = 'all';
+    // }
 
     const questions = await Questions.findAndCountAll({
       raw: true,
