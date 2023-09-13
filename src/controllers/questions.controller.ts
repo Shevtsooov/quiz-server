@@ -47,7 +47,7 @@ export const getQuestionsList = async (
       whereClause.category = category;
     }
 
-    if (category !== 'Всі категорії') {
+    if (category === 'Всі категорії') {
       whereClause.category = 'all';
     }
 
@@ -55,7 +55,7 @@ export const getQuestionsList = async (
       whereClause.difficulty = difficulty;
     }
 
-    if (difficulty !== 'Складність') {
+    if (difficulty === 'Складність') {
       whereClause.difficulty = 'all';
     }
 
