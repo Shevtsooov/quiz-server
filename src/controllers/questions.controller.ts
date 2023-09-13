@@ -172,8 +172,8 @@ export const updateQuestion = async (
 ): Promise<void> => {
   try {
     const {
+      id,
       title,
-      newTitle,
       answers,
       correctAnswer,
       category,
@@ -182,7 +182,7 @@ export const updateQuestion = async (
 
     const currentQuestion = await Questions.findOne({
       where: {
-        title
+        id
       }
     });
 
@@ -196,8 +196,8 @@ export const updateQuestion = async (
         difficulty?: string
       } = {};
 
-      if (newTitle !== undefined) {
-        updateData.title = newTitle;
+      if (title !== undefined) {
+        updateData.title = title;
       }
 
       if (answers !== undefined) {
