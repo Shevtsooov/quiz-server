@@ -17,7 +17,7 @@ const categories = {
   art: 'Мистецтво',
   literature: 'Література',
   personalities: 'Особистості',
-  entetainment: 'Розваги',
+  entertainment: 'Розваги',
   technologies: 'Технології',
   floraAndFauna: 'Флора та фауна',
   human: 'Людина'
