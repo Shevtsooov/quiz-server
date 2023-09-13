@@ -3,6 +3,7 @@
 // @ts-nocheck
 import type { Request, Response } from 'express';
 import { Questions } from '../models/questions/questions.model';
+import { Op } from 'sequelize';
 
 const categories = {
   geography: 'Географія',
@@ -26,8 +27,36 @@ export const getQuestionsList = async (
   req: Request,
   res: Response
 ): Promise<void> => {
+  const {
+    limit = 20,
+    offset = 0,
+    query = '',
+    category = 'all',
+    difficulty = 'all'
+  } = req.query;
+
   try {
-    const questions = await Questions.findAll();
+    const whereClause = {
+      title: {
+        // eslint-disable-next-line @typescript-eslint/no-base-to-string, @typescript-eslint/restrict-template-expressions
+        [Op.iLike]: `%${query}%`
+      }
+    };
+
+    if (category !== 'all') {
+      whereClause.category = category;
+    }
+
+    if (difficulty !== 'all') {
+      whereClause.difficulty = difficulty;
+    }
+
+    const questions = await Questions.findAndCountAll({
+      raw: true,
+      where: whereClause,
+      limit: Number(limit),
+      offset: Number(offset)
+    });
 
     res.json(questions);
   } catch (error) {
