@@ -47,8 +47,16 @@ export const getQuestionsList = async (
       whereClause.category = category;
     }
 
+    if (category !== 'Всі категорії') {
+      whereClause.category = 'all';
+    }
+
     if (difficulty !== 'all') {
       whereClause.difficulty = difficulty;
+    }
+
+    if (difficulty !== 'Складність') {
+      whereClause.difficulty = 'all';
     }
 
     const questions = await Questions.findAndCountAll({
