@@ -393,9 +393,9 @@
     "title": "Як називається найбільша технологічна компанія в Південній Кореї?",
     "answers": ["Toyota", "Samsung", "Xiaomi"],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "technologies",
-    "difficulty": "Технології"
+    "category": "technologies",
+    "categoryName": "Технології",
+    "difficulty": "Нормально"
   },
   {
     "title": "Cтолиця Португалії?",
@@ -562,6 +562,19 @@
     "difficulty": "Складно"
   },
   {
+    "title": "Хто такі снігурі?",
+    "answers": [
+      "Чоботи",
+      "Птахи",
+      "Сніговики",
+      "Зимові квіти"
+    ],
+    "correctAnswer": 1,
+    "category": "others",
+    "categoryName": "Інше",
+    "difficulty": "Нормально"
+  },
+  {
     "title": "Столиця Кіпру?",
     "answers": [
       "Лімасол",
@@ -571,6 +584,45 @@
     "correctAnswer": 1,
     "category": "geography",
     "categoryName": "Географія",
+    "difficulty": "Нормально"
+  },
+  {
+    "title": "У вигляді чого шрам на лобі у Гаррі Поттера?",
+    "answers": [
+      "У вигляді зірки",
+      "У вигляді блискавки",
+      "У вигляді місяця",
+      "У вигляді підкови"
+    ],
+    "correctAnswer": 1,
+    "category": "movies",
+    "categoryName": "Кіно",
+    "difficulty": "Легко"
+  },
+  {
+    "title": "Де прозвучала знаменита фраза \"рускій карабль, іді на...\"?",
+    "answers": [
+      "В Києві",
+      "На о.Зміїний",
+      "На о.Хортиця",
+      "В Криму"
+    ],
+    "correctAnswer": 1,
+    "category": "history",
+    "categoryName": "Історія",
+    "difficulty": "Легко"
+  },
+  {
+    "title": "Як називається наука, що займається вивченням рослин?",
+    "answers": [
+      "Ботаніка",
+      "Екологія",
+      "Біологія",
+      "Агрономія"
+    ],
+    "correctAnswer": 0,
+    "category": "floraAndFauna",
+    "categoryName": "Флора та Фауна",
     "difficulty": "Нормально"
   }
 ]
