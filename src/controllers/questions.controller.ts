@@ -52,7 +52,8 @@ export const getQuestionsList = async (
       raw: true,
       where: whereClause,
       limit,
-      offset: Number(offset)
+      offset: Number(offset),
+      order: [['id', 'DESC']]
     });
 
     res.json(questions);
