@@ -394,15 +394,15 @@
     "answers": ["Toyota", "Samsung", "Xiaomi"],
     "correctAnswer": 1,
     "category": "others",
-    "categoryName": "Інше",
-    "difficulty": "Нормально"
+    "categoryName": "technologies",
+    "difficulty": "Технології"
   },
   {
     "title": "Cтолиця Португалії?",
     "answers": ["Порту", "Лісабон", "Мадрид"],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "geography",
+    "categoryName": "Географія",
     "difficulty": "Нормально"
   },
   {
@@ -413,8 +413,8 @@
       "Том Хенкс"
     ],
     "correctAnswer": 2,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "movies",
+    "categoryName": "Кіно",
     "difficulty": "Нормально"
   },
   {
@@ -425,8 +425,8 @@
       "Манчестер Юнайтед"
     ],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "sport",
+    "categoryName": "Спорт",
     "difficulty": "Нормально"
   },
   {
@@ -437,8 +437,8 @@
       "6"
     ],
     "correctAnswer": 2,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "sport",
+    "categoryName": "Спорт",
     "difficulty": "Легко"
   },
   {
@@ -449,8 +449,8 @@
       "ABBA"
     ],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "music",
+    "categoryName": "Музика",
     "difficulty": "Легко"
   },
   {
@@ -461,8 +461,8 @@
       "Елвіс Преслі"
     ],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "music",
+    "categoryName": "Музика",
     "difficulty": "Легко"
   },
   {
@@ -473,8 +473,8 @@
       "Taylor Swift"
     ],
     "correctAnswer": 0,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "music",
+    "categoryName": "Музика",
     "difficulty": "Складно"
   },
   {
@@ -485,8 +485,8 @@
       "Лувр, Париж, Франція"
     ],
     "correctAnswer": 2,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "art",
+    "categoryName": "Мистецтво",
     "difficulty": "Складно"
   },
   {
@@ -497,8 +497,8 @@
       "Австрія"
     ],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "geography",
+    "categoryName": "Географія",
     "difficulty": "Легко"
   },
   {
@@ -509,8 +509,8 @@
       "США"
     ],
     "correctAnswer": 2,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "geography",
+    "categoryName": "Географія",
     "difficulty": "Легко"
   },
   {
@@ -521,8 +521,8 @@
       "Бангладеш"
     ],
     "correctAnswer": 0,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "geography",
+    "categoryName": "Географія",
     "difficulty": "Легко"
   },
   {
@@ -533,8 +533,8 @@
       "Шотландія"
     ],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "geography",
+    "categoryName": "Географія",
     "difficulty": "Легко"
   },
   {
@@ -545,8 +545,8 @@
       "1918 рік"
     ],
     "correctAnswer": 2,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "history",
+    "categoryName": "Історія",
     "difficulty": "Легко"
   },
   {
@@ -557,8 +557,8 @@
       "Драгал"
     ],
     "correctAnswer": 0,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "movies",
+    "categoryName": "Кіно",
     "difficulty": "Складно"
   },
   {
@@ -569,8 +569,8 @@
       "Ларнака"
     ],
     "correctAnswer": 1,
-    "category": "others",
-    "categoryName": "Інше",
+    "category": "geography",
+    "categoryName": "Географія",
     "difficulty": "Нормально"
   }
 ]

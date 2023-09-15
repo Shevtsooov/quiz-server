@@ -2,7 +2,6 @@
 import express from 'express';
 import {
   getQuestionsList,
-  getQuestionsByCategory,
   addQuestionToList,
   deleteQuestionFromList,
   updateQuestion
@@ -11,7 +10,6 @@ import {
 export const questionsRoutes = express.Router();
 
 questionsRoutes.get('/questions', express.json(), getQuestionsList);
-questionsRoutes.get('/questions/:category', express.json(), getQuestionsByCategory);
 
 questionsRoutes.post('/questions', express.json(), addQuestionToList);
 

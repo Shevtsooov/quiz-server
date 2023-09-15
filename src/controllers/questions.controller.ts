@@ -11,16 +11,13 @@ const categories = {
   sport: 'Спорт',
   others: 'Інше',
   science: 'Наука',
-  politics: 'Політика',
   movies: 'Кіно',
   music: 'Музика',
   art: 'Мистецтво',
   literature: 'Література',
-  personalities: 'Особистості',
-  entertainment: 'Розваги',
+  games: 'Ігри',
   technologies: 'Технології',
-  floraAndFauna: 'Флора та фауна',
-  human: 'Людина'
+  floraAndFauna: 'Флора та фауна'
 };
 
 export const getQuestionsList = async (
@@ -62,38 +59,6 @@ export const getQuestionsList = async (
   } catch (error) {
     console.error('Error fetching questions:', error);
     res.status(500).json({ error: 'Internal server error' });
-  }
-};
-
-export const getQuestionsByCategory = async (
-  req: Request,
-  res: Response
-): Promise<void> => {
-  try {
-    const { category } = req.params;
-
-    if (!(category in categories)) {
-      res.status(404).json({ error: 'На жаль, такої категорії не існує, або ж ви помилилися у її написанні' });
-
-      return;
-    }
-
-    const questions = await Questions.findAll({
-      raw: true,
-      where: {
-        category
-      }
-    });
-
-    if (questions.length === 0) {
-      res.status(404).json({ error: 'В даній категорії ще немає жодного питання' });
-
-      return;
-    }
-
-    res.json(questions);
-  } catch (error) {
-    console.error('Error fetching questions:', error);
   }
 };
 
