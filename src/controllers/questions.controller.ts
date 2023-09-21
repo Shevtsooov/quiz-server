@@ -111,8 +111,6 @@ export const deleteQuestionFromList = async (
       question.title
     ));
 
-    console.log(allTheTitles);
-
     if (!allTheTitles.includes(title)) {
       res.status(404).json({ error: 'На жаль, такого питання не існує, або ж ви помилилися у його написанні' });
 

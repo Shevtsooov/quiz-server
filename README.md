@@ -6,7 +6,7 @@
 
 # Links
 
-[API](https://quiz-server-3co9.onrender.com/)
+[API](https://api.quick-quiz.site/)
 
 # Endpoints
 
@@ -14,7 +14,7 @@
 
 This endpoint retrieves a list of all the questions.
 
-_https://quiz-server-3co9.onrender.com/questions_
+_https://api.quick-quiz.site/questions_
 
 ***
 
@@ -31,7 +31,7 @@ The following fields are required:
   "difficulty": string
 }
 ```
-_https://quiz-server-3co9.onrender.com/questions_
+_https://api.quick-quiz.site/questions_
 
 ***
 
@@ -67,7 +67,7 @@ _Patch request bodies examples:_
 }
 ```
 
-_https://quiz-server-3co9.onrender.com/questions_
+_https://api.quick-quiz.site/questions_
 
 ***
 
@@ -82,4 +82,4 @@ _Delete body should be the following:_
 }
 ```
 
-_https://quiz-server-3co9.onrender.com/questions_
+_https://api.quick-quiz.site/questions_
